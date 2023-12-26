@@ -2,14 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application/layout/news_home/appcubit/app_cubit.dart';
-import 'package:flutter_application/layout/news_home/appcubit/app_states.dart';
-import 'package:flutter_application/layout/news_home/ccbit/cubit.dart';
-import 'package:flutter_application/layout/news_home/news_home.dart';
-// import 'package:flutter_application/layout/todo_home/todo_home_layout.dart';
-// import 'package:flutter_application/modules/bmi/bmi_screen.dart';
-// import 'package:flutter_application/modules/counter/counter_screen.dart';
-import 'package:flutter_application/layout/counter/cubit/bloc_opserver.dart';
+import 'package:flutter_application/layout/appcubit/app_cubit.dart';
+import 'package:flutter_application/layout/appcubit/app_states.dart';
+import 'package:flutter_application/layout/bloc_opserver.dart';
+
 import 'package:flutter_application/layout/shop_home/cubit/shop_cubit.dart';
 import 'package:flutter_application/layout/shop_home/shop_layout.dart';
 import 'package:flutter_application/modules/shop_app/login/login.dart';
@@ -63,9 +59,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => newsCubit()..getBusiness(),
-        ),
         BlocProvider(
           create: (context) => appCubit()..changeAppMode(chageSaveDark: isDark),
         ),

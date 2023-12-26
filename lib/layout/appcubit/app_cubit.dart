@@ -1,4 +1,4 @@
-import 'package:flutter_application/layout/news_home/appcubit/app_states.dart';
+import 'package:flutter_application/layout/appcubit/app_states.dart';
 import 'package:flutter_application/shared/network/local/cach_helper.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

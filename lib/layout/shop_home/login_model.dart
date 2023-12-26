@@ -1,5 +1,3 @@
-import 'package:flutter_application/models/user/user_model.dart';
-
 // هنا الموديل الذي نستقبل فيه الداتا الجايه من الداتا بيز
 class loginModel {
   late bool status;
